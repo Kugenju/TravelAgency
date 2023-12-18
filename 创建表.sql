@@ -32,7 +32,7 @@ CREATE TABLE dbo.Spot (
 CREATE TABLE dbo.Customer (
   CustomerID int IDENTITY(1, 1) NOT NULL,
   CustomerName varchar(50) NOT NULL,
-  Phone varchar(11) NOT NULL,
+  Phone varchar(50) NOT NULL,
   Address varchar(max) NOT NULL,
   PRIMARY KEY (CustomerID)
 );
@@ -49,7 +49,7 @@ CREATE TABLE dbo.Orders (
 CREATE TABLE dbo.Guide(
   GuideID int IDENTITY(1,1) NOT NULL,
   GuideName varchar(50) NOT NULL,
-  Contact varchar(11) NOT NULL,
+  Contact varchar(50) NOT NULL,
   PRIMARY KEY (GuideID)
 );
 
